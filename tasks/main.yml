@@ -1,0 +1,6 @@
+---
+- name: install php on vm1
+  apt:
+    name: php
+    state: present
+  when: "'vm1' in inventory_hostname"
